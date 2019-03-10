@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EntityFrameworkTablePerType.Model
 {
+    [Table("Tasks")]
     public class Task
     {
         public Guid Id { get; set; }
